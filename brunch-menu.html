@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brunch menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+  <div class="navbar">
+     <img src="photos/brunch logo.jpg" class="logo" alt="">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="menu-page">
+    <h1>Our Brunch Selection</h1>
+    <div class="menu-items">
+      <div class="menu-item" id="manakishZaatar">
+        <div class="card-content">
+        <h3>Mankoushet Zaatar</h3>
+        <p>Zaatar</p>
+        <span>$1</span><br>
+        <button onclick="addToCart('Zaatar', 1)">Add</button>
+      </div>
+      </div>
+
+      <div class="menu-item" id="manakishJebneh">
+        <div class="card-content">
+          <h3>Mankoushet Jebneh</h3>
+          <p>Mozzarella Cheese</p>
+          <span>2$</span>
+          <button onclick="addToCart('Jebneh', 2)">Add</button>
+        </div>
+      </div>
+
+       <div class="menu-item" id="ChickenBurger">
+        <div class="card-content">
+          <h3>Chicken Burger</h3>
+          <p>Classic Chicken Burger</p>
+          <span>4$</span>
+          <button onclick="addToCart('Chicken Burger', 4)">Add</button>
+        </div>
+       </div>
+
+       <div class="menu-item" id="BeefBurger">
+        <div class="card-content">
+          <h3>Beef Burger</h3>
+          <p>Classic Lebanese Burger</p>
+          <span>5$</span>
+          <button onclick="addToCart('Beef Burger', 5)">Add</button>
+        </div>
+       </div>
+
+       <div class="menu-item" id="Falafel">
+        <div class="card-content">
+          <h3>Falafel</h3>
+          <p>Lebanese Falafel</p>
+          <span>2$</span>
+          <button onclick="addToCart('Falafel', 2)">Add</button>
+        </div>
+       </div>
+      
+    </div>
+
+    <div class="order-summary-button">
+      <button onclick="showOrderSummary()">See My Order</button>
+      <button onclick="submitOrder()">Submit Order</button>
+    </div>
+    <a href="main.html#menu" class="back-button">← Back to Menu</a>
+  </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

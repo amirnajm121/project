@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <div class="navbar">
+     <img src="photos/dessert logo.jpg" class="logo" alt="">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="menu-page">
+    <h1>Our Dessert Selection</h1>
+    <div class="menu-items">
+      <div class="menu-item" id="Brawnoie">
+        <div class="card-content">
+        <h3>Brownie Cake</h3>
+        <p>Brownoies</p>
+        <span>$2</span>
+        <button onclick="addToCart('Brownie', 2)">Add</button>
+      </div>
+      </div>
+
+      <div class="menu-item" id="NutellaCrepe">
+        <div class="card-content">
+        <h3>Nutella Crepe</h3>
+        <p>Nutella Recipe</p>
+        <span>$4</span>
+       <button onclick="addToCart('Nutella Crepee', 4)">Add</button>
+      </div>
+      </div>
+
+      <div class="menu-item" id="LotusCrepe">
+        <div class="card-content">
+        <h3>Lotus Crepe</h3>
+        <p>Lotus Recipe</p>
+        <span>$4</span>
+         <button onclick="addToCart('Lotus Crepe', 4)">Add</button>
+      </div>
+      </div>
+
+      <div class="menu-item" id="CheeseCake">
+        <div class="card-content">
+        <h3>CheeseCake</h3>
+        <p>Strawberry Recipe</p>
+        <span>$3</span>
+         <button onclick="addToCart('CheeseCake', 3)">Add</button>
+      </div>
+      </div>
+  
+    </div>
+
+    <div class="order-summary-button">
+      <button onclick="showOrderSummary()">See My Order</button>
+      <button onclick="submitOrder()">Submit Order</button>
+    </div>
+
+    <a href="main.html#menu" class="back-button">← Back to Menu</a>
+    
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

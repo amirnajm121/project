@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="navbar">
+     <img src="photos/coffee logo.jpg" class="logo" alt="">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+
+<section class="menu-page">
+
+    <h1>Our Coffee Selection</h1>
+    <div class="menu-items">
+      <div class="menu-item" id="espresso-card">
+        <div class="card-content">
+        <h3>Espresso</h3>
+        <p>Strong and aromatic</p>
+        <span class="price">$3.50</span>
+        <button onclick="addToCart('Espresso', 3.50)">Add</button>
+        </div>
+      </div>
+
+      <div class="menu-item" id="cappuccino-card">
+        <div class="card-content">
+        <h3>Cappuccino</h3>
+        <p>Espresso with steamed milk foam</p>
+        <span class="price">$4.50</span>
+        <button onclick="addToCart('Cappucino', 4.50)">Add</button>
+        </div>
+      </div>
+
+      <div class="menu-item" id="latte-card">
+        <div class="card-content">
+        <h3>Latte</h3>
+        <p>Smooth espresso with steamed milk</p>
+        <span class="price">$5.00</span>
+         <button onclick="addToCart('Latte', 5.00)">Add</button>
+        </div>
+      </div>
+
+      <div class="menu-item" id="mocha-card">
+        <div class="card-content">
+        <h3>Mocha</h3>
+        <p>Chocolate-infused espresso delight</p>
+        <span class="price">$5.25</span>
+         <button onclick="addToCart('Mocha', 5.25)">Add</button>
+        </div>
+      </div>
+
+      <div class="menu-item" id="caramel-macchiato-card">
+        <div class="card-content">
+        <h3>Caramel Macchiato</h3>
+        <p>Vanilla syrup, milk, espresso, caramel</p>
+        <span class="price">$5.50</span>
+         <button onclick="addToCart('Caramel Macciato', 5.50)">Add</button>
+        </div>
+      </div>
+
+      <div class="menu-item" id="caramel-frappucino-card">
+        <div class="card-content">
+        <h3>Caramel Frappuccino</h3>
+        <p> Frappuccino syrup, whipped cream, and caramel sauce</p>
+        <span class="price">$4.75</span>
+         <button onclick="addToCart('Caramel Frappucino', 4.75)">Add</button>
+        </div>
+      </div>
+
+      <div class="menu-item" id="iced-mocha-card">
+        <div class="card-content">
+        <h3>Iced Mocha</h3>
+        <p>Chocolate-infused espresso delight, Ice</p>
+        <span class="price">$5.50</span>
+         <button onclick="addToCart('Iced Mocha', 5.50)">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-summary-button">
+      <button onclick="showOrderSummary()">See My Order</button>
+      <button onclick="submitOrder()">Submit Order</button>
+    </div>
+    
+    <a href="main.html#menu" class="back-button">Back to Main Menu</a>
+
+    <script src="script.js"></script>
+
+</section>
+
+</body>
+</html>
